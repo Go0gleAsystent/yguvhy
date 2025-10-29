@@ -26,3 +26,4 @@ class Todos:
     def get_all_posts(self, header):
         return requests.get(f'{self.base}/posts/', headers=header)
     
+
