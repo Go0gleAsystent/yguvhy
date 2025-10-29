@@ -1,0 +1,16 @@
+name: nie dziala bo to drive
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4 
+      - name: install pytest
+        run: pip install pytest
+      - name: install requests
+        run: pip install requests 
+      - name: run tests
+        run: pytest -v
